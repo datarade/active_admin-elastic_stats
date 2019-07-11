@@ -1,16 +1,16 @@
 # About
 
-This repository contains an Active Admin component to with Elastic Search statistics. It adds a very simple panel that you can include in a dashboard page.
+This repository contains an Active Admin component to display Elastic Search statistics for an index. It adds a very simple panel that you can for example include in your dashboard page.
 
 ![Example of the Component](example.png)
 
-The above screenshot was taken from an Active Admin instance using the `ArcticAdmin` theme.
+The above screenshot was taken from an Active Admin instance using the `ArcticAdmin` theme, so it will look different for instances that use the default theme.
 
 # Installation
 
 Add `gem 'active_admin-elastic_stats'` to your Gemfile and execute `bundle`.
 
-In your Active Admin page activate the component through the Arbre builder method `active_admin_elastic_stats(model)`:
+In your Active Admin page add the component through the Arbre builder method `active_admin_elastic_stats(model)`:
 
 ```ruby
 ActiveAdmin.register_page 'Dashboard' do
