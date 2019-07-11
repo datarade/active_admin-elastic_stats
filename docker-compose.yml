@@ -1,9 +1,9 @@
 version: '3'
 services:
   dev:
-    container_name: elastic_stats
+    container_name: active_admin-elastic_stats
     build:
       context: .
       dockerfile: Dockerfile
-    command: echo "Test"
-
+    volumes:
+      - .:/app
